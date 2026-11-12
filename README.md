@@ -33,3 +33,13 @@ Git преобразует информацию о коммитах с помо�
 # HEAD
 В числе прочих файлов в папке .git есть служебный файл HEAD. Он указывает на самый свежий коммит.
 Вместо хеша последнего коммита можно написать слово HEAD — Git вас поймёт.
+
+# Статусы файлов
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged -- "git commit" --> committed;
+  commited -- "edit file" --> modified;
+  modified -- "git add" --> staged;
+  modified -- "git restore" --> committed;
+``` 
