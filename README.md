@@ -42,4 +42,8 @@ graph LR;
   commited -- "edit file" --> modified;
   modified -- "git add" --> staged;
   modified -- "git restore" --> committed;
-``` 
+```
+ 
+# Правила сообщений коммитов
+Для сообщений на русском языке часто рекомендуют использовать инфинитивы. Например: Добавить тесты для PipkaService, Исправить ошибку #123 и так далее.
+Для сообщений на английском рекомендуется использовать повелительное наклонение (англ. imperative). Например: Use library mega_lib_300, Fix exit button и так далее.
